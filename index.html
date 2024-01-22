@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Maryada Purshuottam Shri Ram</title>
+    <style>
+      * {
+        padding: 0px;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      .grid-container {
+        display: flex;
+        background-image: url(./imgs/ramji.jpg);
+        background-position: center;
+      }
+
+      .news{
+        margin-bottom: -60px;
+    
+      }
+
+      .news p {
+        
+        font-size: 20px;
+        color: #fff;
+        font-weight: 600;
+        padding-inline: 20px;
+      }
+
+      .name {
+        border: 5px solid coral;
+        border-radius: 5px;
+        padding: 10px;
+        margin: 50px;
+        background-color: #fff;
+        height: 100%;
+        text-align: center;
+      }
+      .name img {
+        width: 259px;
+        margin-bottom: 10px;
+      }
+
+      .name h1 {
+        color: rgb(0, 255, 191);
+        text-shadow: 2px 2px 4px #000000;
+      }
+
+      .name h1::first-letter {
+        font-size: 200%;
+        color: green;
+      }
+
+      .name p {
+        font-size: 20px;
+        color: #f91212;
+        font-weight: 600;
+      }
+
+      .picture {
+        text-align: center;
+        padding: 10px;
+        margin: 50px;
+      }
+
+      .picture img {
+        padding: 5px;
+        width: 80%;
+      }
+
+      .created h3{
+        text-align: center;
+        background-color: coral;
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="news">
+     <marquee behavior="" direction=""> <p>JAI SHREE RAM</p></marquee>
+     <marquee behavior="" direction=""><p>🚩जयश्री राम🚩</p></marquee>
+    </div>
+    <div class="grid-container">
+     
+      <div class="name">
+        <img src="https://www.stuvalley.com/images/logo1.png" alt="" />
+        
+        <img src="/imgs/ram.png" alt="" />
+        <!-- <h1 style="border-image: url('/imgs/diya.png')">Shri Ram Ji</h1> -->
+        <p>मंगल भवन अमंगल हारी द्रवहु सुदसरथ अजर बिहारी</p>
+        <br />
+        <p>हो धीरज धरम मित्र अरु नारी आपत काल परखिये चारी</p>
+        <br />
+        <p>रघुकुल रीत सदा चली आई प्राण जाए पर वचन न जाई</p>
+        <br />
+        <p>जेहि कें जेहि पर सत्‍य सनेहू सो तेहि मिलइ न कछु संदेहू</p>
+        <br />
+        <p>हो हरि अनन्त हरि कथा अनन्ता कहहि सुनहि बहुविधि सब संता</p>
+        <br />
+        <p>भीड़ पड़ी जब भक्त पुकारे दूर करो प्रभु दु:ख हमारे</p>
+        <br />
+        <p>विश्वामित्र मुनीश्वर आये दशरथ भूप से वचन सुनाये</p>
+        <br />
+
+      </div>
+      <div class="picture">
+        <img src="/imgs/shri-ram.png" alt="" />
+      </div>
+    </div>
+
+    <div class="created">
+      <h3>Presented by <a href="https://www.stuvalley.com/">@Stuvalley Technology </a> </h3>
+    </div>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+          // Play audio when the page loads
+          const audio = new Audio("/imgs/ram.mp3"); // Change the path to your audio file
+  
+          // Check if the browser supports auto-play
+          const promise = audio.play();
+  
+          // Handle browser restrictions on auto-play
+          if (promise !== undefined) {
+              promise.then(_ => {
+                  // Auto-play started successfully
+              }).catch(error => {
+                  // Auto-play is not allowed; handle it here
+                  console.error("Auto-play not allowed:", error);
+              });
+          }
+      });
+  </script>
+  
+  </body>
+</html>
